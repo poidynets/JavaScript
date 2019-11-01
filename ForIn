@@ -1,0 +1,9 @@
+//for in usage
+const person = {
+name = "Vas",
+age = 35,
+};
+
+
+for (let key in person)
+console.log(key);
