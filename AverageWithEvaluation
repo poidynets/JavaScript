@@ -1,4 +1,4 @@
-const saunaTemperature = [40, 80, 100, 120];
+const array = [40, 80, 100, 120];
 
 // Average = 85
 
@@ -6,15 +6,18 @@ const saunaTemperature = [40, 80, 100, 120];
 // 46-79: Heating
 // 80-120: Damn good!
 
-console.log(calculateHeat(saunaTemperature));
+console.log(calculateHeat(array));
 
 function calculateHeat(saunaTemperature){
-    let sum = 0;
-    for (let saunaT of saunaTemperature)
-        sum += saunaT;
-    let average = sum / saunaTemperature.length;
 
-    if (average < 46) return 'Chill';
-    if (average < 80) return 'Heating';
+    if (calculateAverage < 46) return 'Chill';
+    if (calculateAverage < 80) return 'Heating';
     return 'Damn good!';
+}
+
+function calculateAverage(array){
+    let sum = 0;
+    for (let value of array)
+        sum += value;
+    return sum / array.length;;
 }
