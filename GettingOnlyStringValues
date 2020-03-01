@@ -1,0 +1,14 @@
+    const vehicle = {
+    Name: 'BMW',
+    MadeIn: 2020,
+    Engine: 3.5,
+    Country: 'Germany'
+};
+
+showProperties(vehicle);
+
+function showProperties(obj) {
+    for (let key in obj)
+        if (typeof obj[key] === 'string')
+            console.log(key, obj[key]);
+}
