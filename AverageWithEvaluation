@@ -1,0 +1,20 @@
+const saunaTemperature = [40, 80, 100, 120];
+
+// Average = 85
+
+// 0-45: Chill
+// 46-79: Heating
+// 80-120: Damn good!
+
+console.log(calculateHeat(saunaTemperature));
+
+function calculateHeat(saunaTemperature){
+    let sum = 0;
+    for (let saunaT of saunaTemperature)
+        sum += saunaT;
+    let average = sum / saunaTemperature.length;
+
+    if (average < 46) return 'Chill';
+    if (average < 80) return 'Heating';
+    return 'Damn good!';
+}
