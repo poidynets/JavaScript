@@ -1,0 +1,10 @@
+showStars(7);
+
+function showStars(amountOfLines) {
+    for (let line = 1; line <= amountOfLines; line ++){
+        let pattern = '';
+        for (let i = 0; i < line; i++)
+            pattern += '*';
+        console.log(pattern);
+    }
+}
